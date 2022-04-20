@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Padroniza o site para que e*/
+}
+
+body {
+    background-color: #21c25e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+span {
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 10px 0px 150px;
+    min-width: 500px;
+}
+
+.cabecalho {
+    border-bottom: 1px solid white;
+    margin-left: 150px;
+}
+
+.usuario .container {
+    border-bottom: 1px solid black;
+    padding: 20px 0px 20px 0px;
+}
+
+.dados-usuario {
+    display: flex;
+    flex-direction: row;
+}
+
+.container a {
+    background-color: #13582e;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none; 
+    color: white;
+    width: 100px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.abaixo {
+    border-radius: 10px 10px 0px 0px;
+    background-color: white;
+    margin: 0px;
+    color: black;
+}
+
+.abaixo img {
+    display: block;
+    width: auto;
+}
+
+.container.borda {
+    display: block;
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 20px 0px 20px 0px;
+    margin-top: 100px;
+    text-align: center;
+}
