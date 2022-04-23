@@ -5,66 +5,131 @@
 }
 
 body {
-    background-color: #21c25e;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: white;
+}
+
+header, main  {
+    background-color: #21c25e;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 span {
     font-weight: bold;
 }
 
-.container {
+.borda {
+    border-bottom: 2px solid black;
+    margin: 0px 40px 0px 50px;
+    background-color: #21c25e;
+}
+
+.principal {
+    padding: 20px 40px 20px 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 30px 10px 0px 150px;
-    min-width: 500px;
-}
+    align-items: center;
+} 
 
 .cabecalho {
-    border-bottom: 1px solid white;
-    margin-left: 150px;
+    border-bottom: 2px solid white;
 }
 
-.usuario .container {
-    border-bottom: 1px solid black;
-    padding: 20px 0px 20px 0px;
-}
-
-.dados-usuario {
+.usuario {
     display: flex;
     flex-direction: row;
+    padding-right: 50px;
 }
 
-.container a {
-    background-color: #13582e;
-    padding: 10px;
-    border-radius: 10px;
-    text-decoration: none; 
-    color: white;
+.imagens {
+    padding-right: 0px;
+}
+
+input {
+    width: 120px;
+    height: 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.pagamentos a {
+    background-color: #16582fa5;
     width: 100px;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    height: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
 }
 
 .abaixo {
-    border-radius: 10px 10px 0px 0px;
     background-color: white;
-    margin: 0px;
-    color: black;
+    color: rgba(0, 0, 0, 0.895);
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px 20px 50px;
+}
+
+.descricao {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 1px 1px 1px rgb(170, 163, 163);
 }
 
 .abaixo img {
-    display: block;
-    width: auto;
+    margin-top: 10px;
 }
 
-.container.borda {
-    display: block;
-    border: 0.5px solid rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    padding: 20px 0px 20px 0px;
-    margin-top: 100px;
+.rodape {
+    color: black;
     text-align: center;
+    align-items: flex-end;
+}
+
+
+
+.principal.pagamentos .selecionado {
+    background-color: rgba(88, 143, 101, 0.866);
+    color: white;
+}
+
+.centralizado {
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.centralizado input {
+    width: 100%;
+    height: 40px;
+    background-color: #21c25e;
+}
+
+.descricao2 {
+    display: flex;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 0px 0px 10px 10px;
+    box-shadow: 1px 1px 1px rgb(170, 163, 163);
+    margin-top: 10px;
+}
+
+.descricao2 p {
+    padding: 40px 0px 0px 10px ;
+}
+
+#codigo {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 18px;
 }
